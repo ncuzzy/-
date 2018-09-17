@@ -1,0 +1,30 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/modify/modify"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "我的课表",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "selectedColor": "#1296db",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "课表",
+        "iconPath": "images/class_icon.png",
+        "selectedIconPath": "images/class_icon.png"
+      },
+      {
+        "pagePath": "pages/modify/modify",
+        "text": "设置",
+        "iconPath": "images/modify_icon.png",
+        "selectedIconPath": "images/modify_icon.png"
+      }
+    ]
+  }
+}

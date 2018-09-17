@@ -1,0 +1,19 @@
+<view class="table">
+  <view class="tr bg-w">
+    <view class="th td"></view>
+    <view class="th-2 td">今天是 {{current_week}} 哦</view>
+  </view>
+  <block wx:for="{{classInfo}}" wx:key="{{index}}" wx:for-item="class_item">
+    <view class="tr bg-g" wx:if="{{index % 2 == 0}}">
+      <view class="td-1 td">{{class_item.time}}</view>
+      <view class="td-2 td" scroll-y="true" >{{class_item.classname}}</view>
+      <view class="td-3 td">{{class_item.classroom}}</view>
+      <!--view class="td">{{item.type}}</view-->
+    </view>
+    <view class="tr bg-g2" wx:else>
+      <view class="td-1 td">{{class_item.time}}</view>
+      <view class="td-2 td" scroll-y="true" >{{class_item.classname}}</view>
+      <view class="td-3 td">{{class_item.classroom}}</view>
+    </view>
+  </block>
+</view>
